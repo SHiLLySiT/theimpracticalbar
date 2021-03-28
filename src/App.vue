@@ -1,18 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>The Impractical Bar</h1>
+    <p><i>Coming {{ randomDate }}</i></p>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    // HelloWorld
+  },
+  computed: {
+    randomDate: function () {
+      let start = new Date(Date.now());
+      let dayOffset = Math.random() * 7;
+      let date = new Date(start.getFullYear(), start.getMonth(), start.getDate() + dayOffset);
+      let months = ["January", "Feburary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+      let monthName = months[date.getMonth()];
+      return monthName + " " + date.getDate();
+    }
+  },
 }
 </script>
 
