@@ -39,8 +39,8 @@
      fit-margin-bottom="0"
      inkscape:window-width="1346"
      inkscape:window-height="877"
-     inkscape:window-x="14"
-     inkscape:window-y="83"
+     inkscape:window-x="514"
+     inkscape:window-y="73"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata864">
@@ -50,7 +50,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -60,18 +60,24 @@
      id="layer1"
      transform="translate(-9.8510046,-61.86998)">
     <rect
-       style="fill:#2f1b17;fill-opacity:1;stroke-width:0.264583"
+       style="fill:#1b1b1b;fill-opacity:1;stroke-width:0.264583"
        id="rect1439"
        width="14.977306"
        height="14.032366"
        x="9.8510046"
        y="61.86998"
        ry="2"
-       rx="2" />
+       rx="2"
+       inkscape:export-filename="C:\Users\alexl\Documents\GitHub\theimpracticalbar\public\favicon.png"
+       inkscape:export-xdpi="384"
+       inkscape:export-ydpi="384" />
     <path
        id="path815-9"
        d="m 21.39711,64.886361 c 0.35042,-0.4286 0.102241,-1.16123 -0.393295,-1.16123 h -7.328314 c -0.495536,0 -0.743715,0.73263 -0.393295,1.16123 l 3.529761,4.31511 v 3.87802 h -0.92346 c -0.364272,0 -0.659615,0.36107 -0.659615,0.80642 0,0.0891 0.05904,0.16128 0.131923,0.16128 h 3.957686 c 0.07289,0 0.131923,-0.0721 0.131923,-0.16128 0,-0.44535 -0.295342,-0.80642 -0.659615,-0.80642 h -0.92346 v -3.87802 z m -0.961057,-0.19354 -0.791538,0.9677 h -4.609549 l -0.791537,-0.9677 z"
        inkscape:connector-curvature="0"
-       style="fill:#dfe0d9;fill-opacity:1;stroke-width:0.018;stroke-miterlimit:4;stroke-dasharray:none" />
+       style="fill:#ad900e;fill-opacity:1;stroke-width:0.018;stroke-miterlimit:4;stroke-dasharray:none"
+       inkscape:export-filename="C:\Users\alexl\Documents\GitHub\theimpracticalbar\public\favicon.png"
+       inkscape:export-xdpi="384"
+       inkscape:export-ydpi="384" />
   </g>
 </svg>

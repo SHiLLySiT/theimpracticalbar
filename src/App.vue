@@ -40,7 +40,7 @@
       </div>
       
       <div id="bar-photo">
-        <img src="./assets/placeholder-bar.jpg" />
+        <img src="./assets/bar.jpg" />
       </div>
 
       <div class="content-box" id="about">
@@ -128,25 +128,29 @@ body {
 #header {
   display: flex;
   padding: 25px;
-  background-color: #2F1B17;
+  background-color: #1b1b1b;
 }
 
 #logo {
-  fill: #DFE0D9;
+  /* gold */
+  fill: #ad900e;
+  /* blue */
+  /* fill: #1260a0; */
   max-width: 600px;
 }
 
 #bar-photo {
-  max-height: 600px;
+  /* max-height: 600px; */
 }
 
 p { 
   font-size: 22px;
   font-weight: 500;
   line-height: 24px;
+  color: #535353
 }
 #menu {
-  background-color: #DFE0D9;
+  background-color: #d8d8d8;
 }
 
 .content-box {
@@ -158,8 +162,8 @@ p {
   flex-direction: row;
   align-items: center;
   padding: 10px 10px;
-  background-color: #2F1B17;
-  color: white;
+  background-color: #1b1b1b;
+  color: #ad900e;
 }
 
 #social-container {
@@ -173,7 +177,7 @@ p {
 h2 {
   font-weight: 700;
   font-size: 30px;
-  color: #2F1B17
+  color: #1b1b1b
 }
 
 svg {
