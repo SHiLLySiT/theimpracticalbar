@@ -60,20 +60,27 @@
       </div>
 
       <div id="footer">
-        footer
-      </div>
+        <span id="social-container">
+          <social-button icon="facebook"/>
+          <social-button icon="instagram"/>
+          <social-button icon="twitter"/>
+        </span>
 
+        <span>
+          Copyright 2021 - The Practical Co.
+        </span>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
+import SocialButton from './components/SocialButton.vue'
 
 export default {
   name: 'App',
   components: {
-    // HelloWorld
+    SocialButton
   },
   computed: {
     randomDate: function () {
@@ -133,9 +140,6 @@ body {
   max-height: 600px;
 }
 
-/* #about {
-  padding: 50px 25px;
-} */
 p { 
   font-size: 22px;
   font-weight: 500;
@@ -147,13 +151,23 @@ p {
 
 .content-box {
   padding: 25px 25px;
-  /* border: red 1px solid; */
 }
 
 #footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   padding: 10px 10px;
   background-color: #2F1B17;
   color: white;
+}
+
+#social-container {
+  flex-grow: 1;
+}
+
+.social-button {
+  margin: 5px;
 }
 
 h2 {
