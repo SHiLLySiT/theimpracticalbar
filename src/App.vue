@@ -37,44 +37,29 @@
         </g>
       </svg>
     </div>
-    
+
     <div id="container">
-      <div class="content-box">
-        <img class="content-box-img" src="./assets/bar.jpg" />
-        <div class="content-box-text">
-          A home away from home, in a home. If you know, you know. It is what it is. Inconveniently located at {{ randomAddress }}.
-        </div>
+      <div id="container-squeeze">
+        <content-box 
+          imageName="bar"
+          :content="this.about"
+        />
+
+        <content-box 
+          imageName="wine"
+          content="New drinks featured weekly. Previously featured drinksRaso's Rum Punch, Old Fashioned 5k, The Barista, Well Water Spritzer"
+        />
+
+        <content-box 
+          imageName="barlight"
+          content="Please fax 867-5309 for reservations."
+        />
+
+        <content-box 
+          imageName="couch"
+          content="Follow the links to our social media for next week's lineup."
+        />
       </div>
-
-      <div class="content-box">
-        <img class="content-box-img" src="./assets/wine.jpg" />
-        <div class="content-box-text">
-          <p>New drinks featured weekly.</p>
-          <p>Previously featured drinks:</p>
-          <li>
-            <ul>Raso's Rum Punch</ul>
-            <ul>Old Fashioned 5k</ul>
-            <ul>The Barista</ul>
-            <ul>Well Water Spritzer</ul>
-          </li>
-
-          
-        </div>
-      </div>
-
-      <div class="content-box">
-        <img class="content-box-img" src="./assets/barlight.jpg" />
-        <div class="content-box-text">
-        <p>Please fax 867-5309 for reservations.</p>  
-        </div>
-      </div>
-
-      <div class="content-box">
-        <img class="content-box-img" src="./assets/couch.jpg" />
-        <div class="content-box-text">
-          <p>Follow the links to our social media for next week's lineup.</p>
-        </div>
-      </div>  
     </div>
 
     <div id="footer">
@@ -93,11 +78,18 @@
 
 <script>
 import SocialButton from './components/SocialButton.vue'
+import ContentBox from './components/ContentBox.vue'
 
 export default {
   name: 'App',
   components: {
-    SocialButton
+    SocialButton,
+    ContentBox
+  },
+  data: function() {
+    return {
+      about: "A home away from home, in a home. If you know, you know. It is what it is. Inconveniently located at "// + randomAddress + "."
+    }
   },
   computed: {
     randomDate: function () {
@@ -123,6 +115,10 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;400;500;700&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0px;
 }
@@ -132,7 +128,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #ececec;
-  border: yellow 1px solid;
 }
 
 #header {
@@ -156,38 +151,14 @@ svg {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 10px;
-  /* border: green 1px solid; */
 }
 
-.content-box {
-  position: relative;
-  text-align: center;
-  color: white;
-  margin: 5px;
-}
-
-.content-box-img {
-  max-width: 100%;
-  /* border: red 1px solid; */
-}
-@media screen and (min-width: 1260px) {
-  .content-box-img {
-    max-width: 600px;
-  }
-}
-.content-box-text {
-  /* background-color: rgba(0, 0, 0, 0.75); */
-  background-color: #1b1b1b;
-  font-size: 22px;
-  font-weight: 500;
-  line-height: 24px;
-  padding: 20px;
-  color: #c2a110;
-  /* border: red 1px solid; */
-  position: absolute;
-  bottom: 4px;
-  left: 0px;
+#container-squeeze {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
 }
 
 #footer {
