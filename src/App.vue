@@ -42,12 +42,12 @@
       <div id="container-squeeze">
         <content-box 
           imageName="bar"
-          :content="this.about"
+          :content="'A home away from home, in a home. If you know, you know. It is what it is. Inconveniently located at ' + randomAddress + '.'"
         />
 
         <content-box 
           imageName="wine"
-          content="New drinks featured weekly. Previously featured drinksRaso's Rum Punch, Old Fashioned 5k, The Barista, Well Water Spritzer"
+          content="Featured drinks: Raso's Rum Punch, Old Fashioned 5k, The Barista, and Well Water Spritzer."
         />
 
         <content-box 
@@ -57,7 +57,7 @@
 
         <content-box 
           imageName="couch"
-          content="Follow the links to our social media for next week's lineup."
+          content="Follow the links to our social media for upcoming events."
         />
       </div>
     </div>
@@ -85,11 +85,6 @@ export default {
   components: {
     SocialButton,
     ContentBox
-  },
-  data: function() {
-    return {
-      about: "A home away from home, in a home. If you know, you know. It is what it is. Inconveniently located at "// + randomAddress + "."
-    }
   },
   computed: {
     randomDate: function () {
