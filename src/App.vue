@@ -134,7 +134,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 25px;
-  background-color: #1b1b1b;
+  background-color: #0f0f0f;
 }
 #logo {
   fill: #ad900e;
@@ -165,9 +165,11 @@ svg {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 10px 10px;
-  background-color: #1b1b1b;
+  padding: 16px 16px;
+  background-color: #0f0f0f;
+  font-size: 16px;
   color: #ad900e;
+  margin-top: 10px;
 }
 
 #social-container {

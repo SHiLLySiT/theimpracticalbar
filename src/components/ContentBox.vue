@@ -21,7 +21,7 @@ export default {
 <style>
 @media screen and (min-width: 1260px) {
   .content-box {
-    max-width: 600px;
+    max-width: 500px;
   }
 }
 .content-box {
@@ -29,31 +29,33 @@ export default {
   /* background-color: #1f1f1f; */
   position: relative;
   width: 100%;
+  margin: 10px;
+  margin-bottom: 0px;
 }
 .content-box-img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   max-width: 100%;
   width: 100%;
-}
-
-@media screen and (min-width: 1260px) {
-  .content-box-text {
-    font-size: 50px;
-    line-height: 50px;
-  }
+  margin-bottom: -5px;
 }
 .content-box-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
   text-align: center;
-  /* background-color: #1f1f1f; */
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7) 30%,  rgba(0, 0, 0, .9));
+  background-color: #1f1f1f;
   font-size: 25px;
   line-height: 25px;
   font-weight: 500;
   padding: 20px;
   width: 100%;
   
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
+  height: 120px;
 
   color: #cacaca;
 }
