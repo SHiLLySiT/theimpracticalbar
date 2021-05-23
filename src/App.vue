@@ -52,7 +52,7 @@
 
         <content-box 
           imageName="barlight"
-          content="Please fax 867-5309 for reservations."
+          :content="'Open ' + randomHours + '. Please fax 867-5309 for reservations.'"
         />
 
         <content-box 
@@ -87,6 +87,16 @@ export default {
     ContentBox
   },
   computed: {
+    randomHours: function() {
+      var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+      var day1Index = Math.floor(Math.random() * (days.length - 2));
+      var day2Index = day1Index + Math.floor(Math.random() * (days.length - day1Index - 1)) + 1;
+      var day1 = days[day1Index];
+      var day2 = days[day2Index];
+      var hourStart = Math.ceil(Math.random() * 12);
+      var hourEnd = Math.ceil(Math.random() * 12);
+      return `${day1} thru ${day2} ${hourStart}AM - ${hourEnd}PM`;
+    },
     randomDate: function () {
       let start = new Date(Date.now());
       let dayOffset = Math.random() * 7;
