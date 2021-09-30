@@ -1,5 +1,8 @@
 # theimpracticalbar
 
+## NOTICE
+This website was built for fun and the bar that it represents is completely fictional. "The Impractical Bar" is not a _real_ bar, establishment, or legal entity.
+
 ## Project setup
 ```
 npm install
